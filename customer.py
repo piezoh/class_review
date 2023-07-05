@@ -15,5 +15,5 @@ class Customer:
         else:
             return 1200
 
-
-
+    def info_csv(self):
+        return f"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}"

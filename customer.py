@@ -8,10 +8,14 @@ class Customer:
         return f"{self.first_name} {self.family_name}"
 
     def entry_fee(self):
-        if self.age < 20:
+        if self.age <= 3:
+            return 0
+        elif self.age < 20:
             return 1000
         elif 20 <= self.age < 65:
             return 1500
+        elif self.age >= 75:
+            return 500
         else:
             return 1200
 
